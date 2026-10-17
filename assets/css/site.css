@@ -669,6 +669,59 @@ img {
   border-bottom: 0;
 }
 
+.item.has-thumb {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.item-thumb {
+  position: relative;
+  display: block;
+  width: 60px;
+  aspect-ratio: 2 / 3;
+  margin-top: 4px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--line);
+  box-shadow:
+    0 0 0 1px var(--line),
+    0 8px 18px -10px rgba(10, 12, 30, 0.45);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.shelf[data-kind="listening"] .item-thumb {
+  aspect-ratio: 1;
+  border-radius: 10px;
+}
+
+.item-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item:hover .item-thumb {
+  transform: translateY(-2px) rotate(-1.5deg);
+  box-shadow:
+    0 0 0 1px var(--line-strong),
+    0 14px 24px -12px rgba(10, 12, 30, 0.5);
+}
+
+.item-thumb.is-missing {
+  background:
+    radial-gradient(90% 70% at 15% 10%, var(--orb-a) 0%, transparent 60%),
+    linear-gradient(160deg, var(--orb-b), var(--orb-c));
+  opacity: 0.6;
+}
+
+.item-kicker {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 11px;
+}
+
 .item-top {
   display: flex;
   align-items: baseline;

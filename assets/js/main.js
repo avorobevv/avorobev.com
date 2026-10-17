@@ -38,6 +38,33 @@
 
     items.forEach(function (item) {
       var li = el("li", "item");
+
+      if (item.image) {
+        var thumb = el(item.url ? "a" : "div", "item-thumb");
+        if (item.url) {
+          thumb.href = item.url;
+          thumb.target = "_blank";
+          thumb.rel = "noopener";
+          thumb.tabIndex = -1;
+          thumb.setAttribute("aria-hidden", "true");
+        }
+        var img = el("img");
+        img.src = item.image;
+        img.alt = "";
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.referrerPolicy = "no-referrer";
+        img.addEventListener("error", function () {
+          thumb.classList.add("is-missing");
+          img.remove();
+        });
+        thumb.appendChild(img);
+        li.appendChild(thumb);
+        li.classList.add("has-thumb");
+      }
+
+      var body = el("div", "item-body");
+      li.appendChild(body);
       var top = el("div", "item-top");
       var h = el("h4", "item-title");
       if (item.url) {
@@ -50,11 +77,11 @@
         h.textContent = item.title;
       }
       top.appendChild(h);
-      if (item.meta) top.appendChild(el("span", "mono", item.meta));
-      li.appendChild(top);
+      if (item.meta) body.appendChild(el("span", "mono item-kicker", item.meta));
+      body.appendChild(top);
 
-      if (item.by) li.appendChild(el("p", "item-by", item.by));
-      if (item.note) li.appendChild(el("p", "item-note", item.note));
+      if (item.by) body.appendChild(el("p", "item-by", item.by));
+      if (item.note) body.appendChild(el("p", "item-note", item.note));
 
       if (typeof item.progress === "number") {
         var pct = Math.max(0, Math.min(100, item.progress));
@@ -65,7 +92,7 @@
         track.appendChild(fill);
         row.appendChild(track);
         row.appendChild(el("span", "mono", pct + "%"));
-        li.appendChild(row);
+        body.appendChild(row);
       }
       list.appendChild(li);
     });

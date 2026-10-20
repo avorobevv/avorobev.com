@@ -881,6 +881,45 @@ img {
 }
 
 /* ==========================================================================
+   Music
+   ========================================================================== */
+
+.page-head p em {
+  font-family: var(--serif);
+  font-size: 1.12em;
+  color: var(--ink);
+}
+
+.player {
+  position: relative;
+  max-width: 760px;
+  margin: 0 0 clamp(64px, 10vw, 128px);
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+}
+
+.player .orb {
+  inset: 10% 0 -4% 30%;
+  opacity: 0.35;
+}
+
+.player-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 6px 12px;
+}
+
+.player-embed {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  background: var(--bg-2);
+}
+
+/* ==========================================================================
    Article
    ========================================================================== */
 

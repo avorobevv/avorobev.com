@@ -2,14 +2,6 @@
    avorobev.com: design tokens
    ========================================================================== */
 
-@font-face {
-  font-family: "Cloister Black";
-  src: url("/assets/fonts/cloister-black.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --bg: #f4f1ea;
   --bg-2: #ebe7dd;
@@ -32,7 +24,7 @@
   --sans: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: var(--sans);
   --mono: var(--sans);
-  --blackletter: "Cloister Black", "Old English Text MT", serif;
+  --name-font: "Damion", "Brush Script MT", cursive;
 
   --max: 1120px;
   --gutter: clamp(16px, 4vw, 40px);
@@ -1276,7 +1268,7 @@ img {
 }
 
 /* ==========================================================================
-   Type system: geometric sans everywhere, blackletter for the name
+   Type system: geometric sans everywhere, brush script for the name
    ========================================================================== */
 
 .mono {
@@ -1299,22 +1291,22 @@ h2 em,
 
 .brand-mark,
 .frame .monogram {
-  font-family: var(--blackletter);
+  font-family: var(--name-font);
   font-style: normal;
   font-weight: 400;
   font-synthesis: none;
 }
 
 .brand-mark {
-  font-size: 16px;
-  padding-bottom: 2px;
+  font-size: 19px;
+  padding-bottom: 1px;
 }
 
 .hero h1 {
-  font-family: var(--blackletter);
+  font-family: var(--name-font);
   font-weight: 400;
   font-synthesis: none;
-  font-size: clamp(60px, 8.4vw, 108px);
+  font-size: clamp(66px, 9.4vw, 124px);
   line-height: 0.98;
   letter-spacing: 0;
 }

@@ -6,5 +6,5 @@
   <rect width="64" height="64" rx="18" fill="#3cc9b8"/>
   <rect width="64" height="64" rx="18" fill="url(#a)"/>
   <rect width="64" height="64" rx="18" fill="url(#c)"/>
-  <text x="32" y="43" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="34" fill="#fff">av</text>
+  <text x="32" y="43" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="600" font-size="30" letter-spacing="-1" fill="#fff">av</text>
 </svg>

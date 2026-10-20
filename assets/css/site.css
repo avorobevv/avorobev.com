@@ -21,9 +21,10 @@
   --header-bg: rgba(244, 241, 234, 0.78);
   --grain-opacity: 0.35;
 
-  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
-  --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --sans: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: var(--sans);
+  --mono: var(--sans);
+  --blackletter: "Cloister Black", "UnifrakturCook", "Old English Text MT", serif;
 
   --max: 1120px;
   --gutter: clamp(16px, 4vw, 40px);
@@ -1264,4 +1265,119 @@ img {
   .theme-toggle {
     margin-left: 2px;
   }
+}
+
+/* ==========================================================================
+   Type system: geometric sans everywhere, blackletter for the name
+   ========================================================================== */
+
+.mono {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.tag {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+h1 em,
+h2 em,
+.page-head p em {
+  font-style: normal;
+}
+
+.brand-mark,
+.frame .monogram {
+  font-family: var(--blackletter);
+  font-style: normal;
+}
+
+.brand-mark {
+  font-size: 16px;
+  padding-bottom: 2px;
+}
+
+.hero h1 {
+  font-family: var(--blackletter);
+  font-weight: 700;
+  font-size: clamp(60px, 8.4vw, 108px);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.lede {
+  font-size: clamp(21px, 2.1vw, 25px);
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: -0.012em;
+}
+
+.page-head h1 {
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.section-head h2 {
+  font-size: clamp(34px, 5vw, 60px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.project h2 {
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.project-lede {
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.post-row h2 {
+  font-size: clamp(22px, 2.8vw, 30px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.article h1 {
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.article .standfirst {
+  font-size: clamp(19px, 2.2vw, 22px);
+  line-height: 1.45;
+}
+
+.prose h2 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.prose blockquote {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+.page-head p em {
+  font-size: 1em;
+  font-weight: 500;
 }

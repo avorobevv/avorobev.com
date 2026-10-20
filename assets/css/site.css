@@ -2,6 +2,14 @@
    avorobev.com: design tokens
    ========================================================================== */
 
+@font-face {
+  font-family: "Cloister Black";
+  src: url("/assets/fonts/cloister-black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #f4f1ea;
   --bg-2: #ebe7dd;
@@ -24,7 +32,7 @@
   --sans: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: var(--sans);
   --mono: var(--sans);
-  --blackletter: "Cloister Black", "UnifrakturCook", "Old English Text MT", serif;
+  --blackletter: "Cloister Black", "Old English Text MT", serif;
 
   --max: 1120px;
   --gutter: clamp(16px, 4vw, 40px);
@@ -1293,6 +1301,8 @@ h2 em,
 .frame .monogram {
   font-family: var(--blackletter);
   font-style: normal;
+  font-weight: 400;
+  font-synthesis: none;
 }
 
 .brand-mark {
@@ -1302,7 +1312,8 @@ h2 em,
 
 .hero h1 {
   font-family: var(--blackletter);
-  font-weight: 700;
+  font-weight: 400;
+  font-synthesis: none;
   font-size: clamp(60px, 8.4vw, 108px);
   line-height: 0.98;
   letter-spacing: 0;

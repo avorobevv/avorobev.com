@@ -1,5 +1,5 @@
 /* ==========================================================================
-   avorobev.com — design tokens
+   avorobev.com: design tokens
    ========================================================================== */
 
 :root {
@@ -556,6 +556,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 12%;
 }
 
 .caption {
@@ -600,7 +601,7 @@ img {
   color: var(--muted);
 }
 
-/* "Currently" — three shelves */
+/* "Currently": three shelves */
 .shelves {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

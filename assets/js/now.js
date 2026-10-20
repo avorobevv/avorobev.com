@@ -1,6 +1,6 @@
 /*
   "Currently" shelves on the home page.
-  Edit this file to update what you're listening to, watching and reading —
+  Edit this file to update what you're listening to, watching and reading;
   no HTML changes needed. Every field except `title` is optional.
 
   image:    thumbnail URL (YouTube: https://i.ytimg.com/vi/<id>/mqdefault.jpg,
@@ -16,7 +16,7 @@ window.NOW = {
       title: "Acquired",
       by: "Ben Gilbert & David Rosenthal",
       meta: "Podcast",
-      note: "Long-form company histories — the best case studies on how systems and organizations scale.",
+      note: "Long-form company histories, and the best case studies on how systems and organizations scale.",
       url: "https://www.acquired.fm/",
       image:
         "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/a8/e1/de/a8e1deff-9f88-4e55-a541-b0dc793c0cdc/mza_11539673419613154037.jpg/300x300bb.jpg",
@@ -25,7 +25,7 @@ window.NOW = {
       title: "Atlassian CEO Mike Cannon-Brookes",
       by: "20VC with Harry Stebbings",
       meta: "64 min",
-      note: "On why everything is overvalued and whether we're in an AI bubble.",
+      note: "What still matters and requires attention from humans in the era of agents?",
       url: "https://www.youtube.com/watch?v=JEqzQ1UweEg",
       image: "https://i.ytimg.com/vi/JEqzQ1UweEg/mqdefault.jpg",
     },
@@ -33,7 +33,8 @@ window.NOW = {
       title: "#499 – Gary Gallagher",
       by: "Lex Fridman Podcast",
       meta: "3 hr 46 min",
-      note: "American Civil War, slavery, Lincoln, Grant & Lee — with UVA historian Gary Gallagher.",
+      note:
+        "I enjoyed the discussion on Ulysses Grant, Lincoln's uniqueness, and the analysis of revisionist interpretations of Confederate culture, statues, etc.",
       url: "https://www.youtube.com/watch?v=XyXBwO5jYpw",
       image: "https://i.ytimg.com/vi/XyXBwO5jYpw/mqdefault.jpg",
     },
@@ -80,7 +81,7 @@ window.NOW = {
       title: "Warnings",
       by: "Richard A. Clarke & R. P. Eddy",
       meta: "Book",
-      note: "Finding Cassandras to stop catastrophes — why accurate warnings get ignored.",
+      note: "Finding Cassandras to stop catastrophes: why accurate warnings get ignored.",
       url: "https://openlibrary.org/isbn/9780062488022",
       image: "https://covers.openlibrary.org/b/isbn/9780062488022-M.jpg",
       progress: 1,
